@@ -8,7 +8,7 @@
 <meta name="theme-color" content="#0b3d91">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,500;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
 :root{
   --blue:#0b3d91; --blue-700:#08306f; --blue-900:#061f4a;
@@ -183,6 +183,28 @@ footer a:hover{color:var(--gold);border-color:var(--gold)}
   .tl-card{padding:18px}
   .topbar{padding-bottom:28px}
 }
+
+/* ===== Tema cerah & modern (rujukan: smkciledugalmusaddadiyah.sch.id) ===== */
+:root{--blue:#1456d8;--blue-700:#0f47b8;--blue-900:#0b3d91;--gold:#f7b92e;--gold-soft:#fff6d9;--ink:#0f1f45;--muted:#50607f;--line:#e0e9f8;--line-2:#c9daf5;--bg:#f6f9ff;--radius:16px;--shadow:0 1px 2px rgba(15,31,69,.04),0 8px 24px rgba(20,86,216,.07);--serif:'Plus Jakarta Sans',system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif}
+h1,h2,h3,.fact strong,.tl-year{letter-spacing:-.02em}
+h2,.hero h1{font-weight:800}
+.hero h1{letter-spacing:-.03em}
+h2 em,.hero h1 em,.cta h2 em{font-style:normal}
+.hero{background:radial-gradient(900px 420px at 90% -20%,rgba(255,255,255,.24),transparent 60%),linear-gradient(135deg,#0b3d91 0%,#1456d8 58%,#2f7bff 100%)}
+.hero::after{display:none}
+.cta{background:radial-gradient(700px 300px at 50% -30%,rgba(255,255,255,.22),transparent 60%),linear-gradient(135deg,#0b3d91,#1456d8 70%,#2f7bff)}
+.hero .eyebrow{background:rgba(255,255,255,.14);border-color:rgba(255,255,255,.38);color:#fff}
+.eyebrow{text-transform:none;letter-spacing:.01em;font-weight:700;font-size:.86rem}
+.sec-head .eyebrow,.profile dt,.node .role,.subhead{color:var(--blue)}
+.profile dt,.node .role,.subhead,footer h4,.brand small,.person .tag{text-transform:none;letter-spacing:.01em}
+.prose p,.chips span{color:#26385f}
+.value i,.lk i,.person .tag{background:#eaf2ff;color:var(--blue)}
+.subnav a{background:transparent;border-color:var(--line-2)}
+.btn-gold,.btn-blue{box-shadow:none}
+.program:hover,.lk:hover{transform:none;border-color:var(--blue);box-shadow:var(--shadow)}
+.principal blockquote{font-style:normal;font-weight:600;font-size:1.2rem}
+.js .reveal{transform:translateY(10px);transition:opacity .5s ease,transform .5s ease}
+@media (min-width:561px){section{padding-top:88px}}
 </style>
 </head>
 <body>
@@ -201,7 +223,7 @@ footer a:hover{color:var(--gold);border-color:var(--gold)}
 
     <span class="eyebrow">Sejarah &amp; Profil Sekolah</span>
     <h1>Tiga Dekade Mencetak Generasi <em>Beriman, Terampil &amp; Berdaya Saing</em></h1>
-    <p class="lead">Perjalanan SMKS Ciledug Al-Musaddadiyah Garut di bawah naungan Yayasan Al-Musaddadiyah — memadukan nilai keislaman, keunggulan akademik, dan keterampilan vokasional.</p>
+    <p class="lead">Tiga dekade pendidikan vokasi berlandaskan nilai keislaman: dari akar pesantren hingga sekolah terakreditasi A yang terhubung dengan industri dan perguruan tinggi.</p>
     <div class="cta-row">
       <a class="btn btn-gold" href="#linimasa">Telusuri Linimasa</a>
       <a class="btn btn-ghost" href="https://www.smkciledugalmusaddadiyah.sch.id/p/profil.html" target="_blank" rel="noopener">Profil Sekolah</a>
@@ -331,9 +353,9 @@ footer a:hover{color:var(--gold);border-color:var(--gold)}
       <p>Tiga fondasi yang menjaga arah SMK CALM dari masa ke masa.</p>
     </div>
     <div class="values">
-      <article class="card value reveal"><i>I</i><h3>Iman &amp; Akhlak</h3><p>Menanamkan nilai-nilai Islam sebagai landasan karakter siswa yang berintegritas tinggi.</p></article>
-      <article class="card value reveal"><i>K</i><h3>Ilmu &amp; Kompetensi</h3><p>Kurikulum yang relevan dan fasilitas modern untuk menyiapkan siswa menghadapi dunia kerja.</p></article>
-      <article class="card value reveal"><i>P</i><h3>Inovasi &amp; Prestasi</h3><p>Mendorong siswa berprestasi di tingkat kabupaten, provinsi, hingga nasional.</p></article>
+      <article class="card value reveal"><i>I</i><h3>Iman &amp; Akhlak</h3><p>Nilai-nilai Islam menjadi landasan pembentukan karakter yang berintegritas.</p></article>
+      <article class="card value reveal"><i>K</i><h3>Ilmu &amp; Kompetensi</h3><p>Kurikulum relevan dan fasilitas modern yang menyiapkan siswa menghadapi dunia kerja.</p></article>
+      <article class="card value reveal"><i>P</i><h3>Inovasi &amp; Prestasi</h3><p>Pembinaan berkelanjutan agar siswa berprestasi dari tingkat kabupaten hingga nasional.</p></article>
     </div>
   </section>
 
@@ -347,25 +369,25 @@ footer a:hover{color:var(--gold);border-color:var(--gold)}
     <div class="programs">
       <a class="card program reveal" href="https://www.smkciledugalmusaddadiyah.sch.id/p/jurusan-akuntansi-smks-ciledug-al.html" target="_blank" rel="noopener">
         <span class="mono">AKL</span><h3>Akuntansi Keuangan Lembaga</h3>
-        <p>Akuntansi digital, perpajakan, dan aplikasi akuntansi modern berbasis industri.</p><span class="more">Selengkapnya &rarr;</span></a>
+        <p>Akuntansi digital, perpajakan, dan penggunaan aplikasi akuntansi sesuai standar industri.</p><span class="more">Selengkapnya &rarr;</span></a>
       <a class="card program reveal" href="https://www.smkciledugalmusaddadiyah.sch.id/p/bisnis-digital.html" target="_blank" rel="noopener">
         <span class="mono">BD</span><h3>Bisnis Digital</h3>
-        <p>Pemasaran digital, social media marketing, dan branding untuk ekonomi digital.</p><span class="more">Selengkapnya &rarr;</span></a>
+        <p>Pemasaran digital, pengelolaan media sosial, dan branding untuk bisnis daring.</p><span class="more">Selengkapnya &rarr;</span></a>
       <a class="card program reveal" href="https://www.smkciledugalmusaddadiyah.sch.id/p/desain-komunikasi-visual.html" target="_blank" rel="noopener">
         <span class="mono">DKV</span><h3>Desain Komunikasi Visual</h3>
-        <p>Desain visual modern, ilustrasi digital, motion graphic, dan branding kreatif.</p><span class="more">Selengkapnya &rarr;</span></a>
+        <p>Desain visual, ilustrasi digital, motion graphic, dan branding untuk industri kreatif.</p><span class="more">Selengkapnya &rarr;</span></a>
       <a class="card program reveal" href="https://www.smkciledugalmusaddadiyah.sch.id/p/teknik-jaringan-komputer.html" target="_blank" rel="noopener">
         <span class="mono">TKJ</span><h3>Teknik Komputer &amp; Jaringan</h3>
-        <p>Jaringan, administrasi server, dan keamanan siber berbasis teknologi industri.</p><span class="more">Selengkapnya &rarr;</span></a>
+        <p>Jaringan komputer, administrasi server, dan keamanan siber berbasis teknologi industri.</p><span class="more">Selengkapnya &rarr;</span></a>
       <a class="card program reveal" href="https://www.smkciledugalmusaddadiyah.sch.id/p/teknik-kendaraan-ringan.html" target="_blank" rel="noopener">
         <span class="mono">TKR</span><h3>Teknik Kendaraan Ringan</h3>
-        <p>Teknologi kendaraan modern, servis otomotif, dan sistem injeksi.</p><span class="more">Selengkapnya &rarr;</span></a>
+        <p>Teknologi kendaraan modern, servis berkala, dan sistem injeksi bahan bakar.</p><span class="more">Selengkapnya &rarr;</span></a>
       <a class="card program reveal" href="https://www.smkciledugalmusaddadiyah.sch.id/p/teknik-sepeda-motor.html" target="_blank" rel="noopener">
         <span class="mono">TSM</span><h3>Teknik Sepeda Motor</h3>
-        <p>Otomotif roda dua berbasis injeksi dengan praktik langsung di bengkel.</p><span class="more">Selengkapnya &rarr;</span></a>
+        <p>Servis sepeda motor injeksi dengan praktik langsung di bengkel.</p><span class="more">Selengkapnya &rarr;</span></a>
       <a class="card program reveal" href="https://www.smkciledugalmusaddadiyah.sch.id/p/manajemen-perkantoran.html" target="_blank" rel="noopener">
-        <span class="mono">MP</span><h3>Manajemen Perkantoran</h3>
-        <p>Administrasi dan bisnis dengan teknologi perkantoran modern dan komunikasi industri.</p><span class="more">Selengkapnya &rarr;</span></a>
+        <span class="mono">MPLB</span><h3>Manajemen Perkantoran</h3>
+        <p>Administrasi perkantoran, layanan front office, dan pengelolaan data dengan teknologi modern.</p><span class="more">Selengkapnya &rarr;</span></a>
     </div>
   </section>
 
@@ -412,7 +434,7 @@ footer a:hover{color:var(--gold);border-color:var(--gold)}
         <img loading="lazy" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg2dKM1s2DAgpQifSVcSDrcY0qt4ifK4QPcgMUxM9zURgf_o5eo5SKPr1s-OUTDoQl5AfIZpoisF3gpcAqEWbSbZGRJcC-X_tMw5c0HYxClxK263XHQ7MIMLJO5_DJZWdZUY1Qs6ptb6XxTI9DWnqLwpDFn8SqaJFAa9UmLFITj6Z73jdnTF6T8HXpPWps/s320/WhatsApp_Image_2024-04-09_at_15.52.46-removebg-preview%20(1).png" alt="KH. M. Nasrullah Ramdhan, M.Si" onerror="this.remove()">
       </div>
       <div class="msg">
-        <span class="eyebrow" style="color:#b17f10">Selamat Datang</span>
+        <span class="eyebrow">Selamat Datang</span>
         <blockquote>Kami hadir dengan tekad mencetak lulusan yang cerdas secara akademik, berakhlak mulia, terampil, dan percaya diri menghadapi tantangan zaman.</blockquote>
         <div class="who"><b>KH. M. Nasrullah Ramdhan, M.Si</b><span>Kepala SMK Ciledug Al-Musaddadiyah &middot; Yayasan Al-Musaddadiyah Garut</span></div>
       </div>
@@ -449,7 +471,7 @@ footer a:hover{color:var(--gold);border-color:var(--gold)}
   <div class="wrap reveal">
     <span class="eyebrow">Sistem Penerimaan Murid Baru</span>
     <h2>Wujudkan Impianmu Bersama <em>SMK CALM</em></h2>
-    <p>Jadilah bagian dari keluarga besar SMK Ciledug Al-Musaddadiyah dan tulis kisah suksesmu berikutnya.</p>
+    <p>Pilih salah satu dari tujuh program keahlian dan mulai langkah pertamamu menuju dunia kerja, wirausaha, atau perguruan tinggi.</p>
     <div class="cta-row">
       <a class="btn btn-gold" href="https://www.smkciledugalmusaddadiyah.sch.id/p/ppdb-online-smk-ciledug-al-musaddadiyah.html" target="_blank" rel="noopener">Daftar Sekarang</a>
       <a class="btn btn-ghost" href="https://wa.me/6287856681523" target="_blank" rel="noopener">Tanya via WhatsApp</a>
